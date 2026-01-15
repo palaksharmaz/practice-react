@@ -12,8 +12,8 @@ import ReactDOM from "react-dom/client";
 // JSX - HTML-like or XML-like syntax
 // JSX is transpiled before it reaches JS Engine by PARCEL using "Babel"
 
-const jsxheading = <h1 className="head" tabIndex="i">Namaste React using JSX</h1>
+const heading = <h1 className="head" tabIndex="i">Namaste React using JSX</h1>
 
 const root =  ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(jsxheading);
+root.render(heading);
