@@ -2,13 +2,18 @@
   "name": "practice_react",
   "version": "1.0.0",
   "description": "react practice",
-  "main": "App.js",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "author": "Palak",
   "license": "ISC",
   "devDependencies": {
     "parcel": "^2.16.3"
+  },
+  "dependencies": {
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
   }
 }
