@@ -1,19 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-// JSX => React.createElement => Object => HTMLElement(render)
+// React Element
+const title = (
+    <h1 className="head" tabIndex="5">
+        Namaste React using JSX
+    </h1>
+);
 
-// const heading = React.createElement(
-//     "h1",
-//     {id:"heading"},
-//     "Namaste Reactt!!"
-// );
-
-// JSX - HTML-like or XML-like syntax
-// JSX is transpiled before it reaches JS Engine by PARCEL using "Babel"
-
-const heading = <h1 className="head" tabIndex="i">Namaste React using JSX</h1>
+//React Functional Component (new)
+const HeadingComponent = () => (
+    <div id="container">
+        {title}
+        <h1 className="heading">Namaste React Functional Component</h1>
+    </div>
+);
 
 const root =  ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(heading);
+root.render(<HeadingComponent />);
